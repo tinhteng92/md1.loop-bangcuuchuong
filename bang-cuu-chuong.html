@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table  border="1">
+    <tbody id="display"></tbody>
+</table>
+
+</body>
+</html>
+<script>
+    let str = "<tr>";
+    for ( let i = 1; i<= 10; i++) {
+        str += "<tr>"
+        for (let j = 2; j < 10 ; j++) {
+            str+= "<td>"+ j +" x " + i +  "=" + i*j + "</td>"
+        }
+    }
+    str += "</tr>"
+    document.getElementById("display").innerHTML =str
+    console.log(str)
+</script>
